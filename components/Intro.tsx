@@ -59,22 +59,20 @@ const Intro = () => {
         >
           Contact me <BsArrowRight />
         </Link>
-        <a className=" bg-gray-400 text-black px-7 py-3 flex items-center gap-2 rounded-full ">
+        <a className=" bg-gray-400 text-black px-7 py-3 flex items-center gap-2 rounded-full " >
           <HiDownload />
           Download CV
         </a>
-        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full">
+        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full" target="blank" href="https://www.linkedin.com/in/architgarg08/">
           <BsLinkedin />
         </a>
-        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full">
+        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"  target="blank"  href="https://github.com/Archit5655">
           <AiFillGithub />
         </a>
-        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full">
+        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full" target="blank"   href="https://twitter.com/Archit_gargg">
           <AiOutlineTwitter />
         </a>
-        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full">
-          <BsDiscord />
-        </a>
+      
       </motion.div>
     </section>
   );
