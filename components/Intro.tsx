@@ -48,31 +48,45 @@ const Intro = () => {
           Next.js and React Native technologies
         </span>
       </motion.p>
-      <motion.div className=" flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"    initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }} transition={{
-          delay:0.2
-        }} >
-
+      <motion.div
+        className=" flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.2,
+        }}
+      >
         <Link
-          className=" bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-100 "
-          href="#contact"
+          className=" bg-gray-900 group text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition  cursor-pointer"
+          href="/contact"
         >
-          Contact me <BsArrowRight />
+          Contact me <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-        <a className=" bg-gray-400 text-black px-7 py-3 flex items-center gap-2 rounded-full " >
-          <HiDownload />
+        <a className="  cursor-pointer group bg-gray-400 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition  ">
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
           Download CV
         </a>
-        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full" target="blank" href="https://www.linkedin.com/in/architgarg08/">
+        <a
+          className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition"
+          target="blank"
+          href="https://www.linkedin.com/in/architgarg08/"
+        >
           <BsLinkedin />
         </a>
-        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"  target="blank"  href="https://github.com/Archit5655">
+        <a
+          className="outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"
+          target="blank"
+          href="https://github.com/Archit5655"
+        >
           <AiFillGithub />
         </a>
-        <a className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full" target="blank"   href="https://twitter.com/Archit_gargg">
+        <a
+          className="outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"
+          target="blank"
+          href="https://twitter.com/Archit_gargg"
+        >
           <AiOutlineTwitter />
         </a>
-      
       </motion.div>
     </section>
   );
