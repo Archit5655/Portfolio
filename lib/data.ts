@@ -72,14 +72,16 @@ export const projectsData = [
     description:
       "A car renting website fetching the data of the cars  from rapidapi and showcasing them built using nextjs and typescript ",
     tags: ["React", "Next.js",  "Tailwind","RapidAPi","Fetching Data" ],
-    imageUrl: spotify,
+    imageUrl:  car,
+    href:"https://bussiness-level-carshow-website-nextjs.vercel.app/"
   },
   {
     title: "Spotify Clone",
     description:
       "A clone of Spotify app with song playing functionality made using nextjs and supabase for backend and authentication.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Zustand","Supabase",],
-    imageUrl: car,
+    imageUrl:spotify ,
+    href:"https://spotify-clone-orcin-tau.vercel.app/"
   },
   {
     title: "News app",
@@ -87,6 +89,7 @@ export const projectsData = [
       "A Web App Fetching News from news API and showing them in different cards also give the options to choose from different categeries of news.",
     tags: ["React", "API", "CSS","Javascript"],
     imageUrl: news,
+    href:""
   },
 ] as const;
 
