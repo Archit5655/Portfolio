@@ -29,7 +29,7 @@ export default function RootLayout({
         <div className='bg-[#4b5563] absolute top-[-1rem] -z-20 left-[-35rem] h-[32rem] w-[32rem] rounded-full blur-[10rem] sm:w-[68rem] md:left-[-33rem] lg:left-[-28rem] '>
 
         </div>
-        
+
         
 <Header/>
 

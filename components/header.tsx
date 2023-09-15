@@ -1,12 +1,25 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, spring } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
   const [Active, setActive] = useState("Home");
+  useEffect(() => {
+    if (pathname === "/") {
+      setActive("Home");
+    } else {
+      const newpath: string = pathname.slice(1, pathname.length);
+      const newpathh = newpath.charAt(0).toUpperCase() + newpath.slice(1);
+      // console.log(newpathh)
+      setActive(newpathh);
+    }
+  }, [pathname]);
+
   return (
     <header className=" z-[999] relative">
       <motion.div
@@ -23,23 +36,32 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
               key={link.hash}
             >
-              <Link 
-                className={clsx(" flex items-center justify-center w-full px-3 py-3 hover:text-gray-950  transition ",{
-                  ' text-gray-950':Active===link.name
-                })}
+              <Link
+                className={clsx(
+                  " flex items-center justify-center w-full px-3 py-3 hover:text-gray-950  transition ",
+                  {
+                    " text-gray-950": Active === link.name,
+                  }
+                )}
                 href={link.hash}
-                onClick={()=>setActive(link.name)}
+                onClick={() => setActive(link.name)}
               >
                 {link.name}{" "}
-                {
-                  link.name===Active ?  <motion.span className=" bg-zinc-400  rounded-full absolute inset-0 -z-10" layoutId="Active" transition={{
-                    type:'spring',
-                    stiffness:500,
-                    damping:30
-
-                  }}>     </motion.span>:""
-                }
-            
+                {link.name === Active ? (
+                  <motion.span
+                    className=" bg-zinc-400  rounded-full absolute inset-0 -z-10"
+                    layoutId="Active"
+                    transition={{
+                      type: "spring",
+                      stiffness: 500,
+                      damping: 30,
+                    }}
+                  >
+                    {" "}
+                  </motion.span>
+                ) : (
+                  ""
+                )}
               </Link>
             </motion.li>
           ))}

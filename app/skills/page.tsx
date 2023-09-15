@@ -36,7 +36,7 @@ const page = () => {
         
         <motion.li variants={fadeinanimation} initial="initial" whileInView="animate" viewport= {{
           once:true
-        }} custom={index} className='  bg-gray-400 border border-black/[0.1] text-white   text-opacity-80 rounded-xl px-8 py-7 ' key={index}> {skills}</motion.li>
+        }} custom={index} className='  bg-gray-500 border border-black/[0.1] text-white   text-opacity-80 rounded-xl px-8 py-7 ' key={index}> {skills}</motion.li>
 
       ))}
 
