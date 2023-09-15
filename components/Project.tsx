@@ -16,13 +16,15 @@ function Project({ title, description, tags, imageUrl, href }: Projectprops) {
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const scaleProgress=useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const opacity=useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <motion.div
+
       ref={ref}
       style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
+        scale: scaleProgress,
+        opacity: opacity,
       }}
       className=" mb-3 sm:mb-8 "
     >

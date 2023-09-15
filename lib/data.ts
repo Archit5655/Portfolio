@@ -99,15 +99,16 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "React native",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  // "Prisma",
+  "Prisma",
   "MongoDB",
   "Redux",
-
   "Express",
-
   "Framer Motion",
+  "SQL",
+  
 ] as const;
