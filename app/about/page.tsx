@@ -20,7 +20,7 @@ transition={{delay:0.175}}
         Currently He is pursuing Btech in {" "}
         <span className="font-medium">Computer Seience</span>, His passion for coding and curiosity to explore new technologies fuels my motivation to excel in this field. {" "}
         <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">His favorite part of programming</span> is the
+        <span className="">His favorite part of programming</span> is the
         problem-solving aspect. He <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. His core stack
         is{" "}
@@ -34,7 +34,7 @@ transition={{delay:0.175}}
       </p>
 
       <p className='text-2xl mb-3 '>
-        <span className="italic">When he is not coding</span>, He enjoy playing
+        <span className="">When he is not coding</span>, He enjoy playing
         video games, watching movies and vibing on music. He also enjoy{" "}
         <span className="font-medium">learning new things</span>. 
       </p>
