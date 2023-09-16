@@ -1,0 +1,20 @@
+"use client"
+
+import React from 'react'
+import { PacmanLoader } from 'react-spinners'
+
+const loading = () => {
+  return (
+<div className=' flex items-center justify-center mt-48'>
+
+<PacmanLoader color='#757575' size={70} />
+
+
+</div>
+
+   
+
+  )
+}
+
+export default loading
