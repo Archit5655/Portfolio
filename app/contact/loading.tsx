@@ -8,6 +8,7 @@ const loading = () => {
 <div className=' flex items-center justify-center mt-48'>
 
 <PacmanLoader color='#757575' size={70} />
+
 </div>
 
    
