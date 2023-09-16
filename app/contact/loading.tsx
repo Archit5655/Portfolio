@@ -9,7 +9,6 @@ const loading = () => {
 
 <PacmanLoader color='#757575' size={70} />
 
-
 </div>
 
    
