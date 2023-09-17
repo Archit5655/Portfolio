@@ -6,7 +6,7 @@ import React, { useContext } from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-const page = () => {
+const Experience = () => {
   const {theme}=useTheme()
   return (
  <section>
@@ -50,4 +50,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Experience
