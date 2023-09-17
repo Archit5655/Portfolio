@@ -1,11 +1,13 @@
 "use client"
 import Heading from '@/components/Heading'
+import { useTheme } from '@/context/theme-context';
 import { experiencesData } from '@/lib/data';
-import React from 'react'
+import React, { useContext } from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 const page = () => {
+  const {theme}=useTheme()
   return (
  <section>
   <Heading title='Experience' />
@@ -15,7 +17,7 @@ const page = () => {
       <React.Fragment key={index}>
 
       <VerticalTimelineElement contentStyle={{
-        background:'#BDBDBD',
+        background: theme==="light" ?  '#BDBDBD': 'rgba(255,255,255,0.05)',
         boxShadow:'none',
         border:'1px solid rgba(0,0,0,0.05)',
         textAlign:"left",
@@ -29,14 +31,14 @@ const page = () => {
       date={item.date}
       icon={item.icon}
       iconStyle={{
-        background:"white",
+        background:theme==="light"?"white":"gray",
         fontSize:"1.5rem",
       }}
 
       >
         <h3 className=' font-semibold capitalize '>{item.title}</h3>
         <p className='font-normal !mt-0'>{item.location}</p>
-        <p className='!mt-1 !font-normal text-gray-700'>{item.description}</p>
+        <p className='!mt-1 !font-normal'>{item.description}</p>
 
 
       </VerticalTimelineElement>

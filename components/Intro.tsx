@@ -9,7 +9,7 @@ import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 
 const Intro = () => {
   return (
-    <section className=" mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section className=" mb-28 max-w-[50rem] text-center  sm:-mb-3">
       <div className=" flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
@@ -57,31 +57,31 @@ const Intro = () => {
         }}
       >
         <Link
-          className=" bg-gray-900 group text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition  cursor-pointer"
+          className=" bg-gray-900 dark:bg-gray-50 dark:text-gray-950 group text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition  cursor-pointer "
           href="/contact"
         >
           Contact me <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-        <a className="  cursor-pointer group bg-gray-400 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition  ">
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+        <a className="  cursor-pointer group bg-gray-400 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition dark:bg-gray-600  ">
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition " />
           Download CV
         </a>
         <a
-          className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition"
+          className=" bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600  active:scale-105 transition dark:bg-zinc-500 dark:hover:bg-gray-600"
           target="blank"
           href="https://www.linkedin.com/in/architgarg08/"
         >
           <BsLinkedin />
         </a>
         <a
-          className="outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"
+          className="outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600  dark:bg-zinc-500 dark:hover:bg-gray-600 active:scale-105 transition bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"
           target="blank"
           href="https://github.com/Archit5655"
         >
           <AiFillGithub />
         </a>
         <a
-          className="outline-none focus:scale-110 hover:scale-110 hover:bg-gray-600 active:scale-105 transition bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"
+          className="outline-none focus:scale-110 hover:scale-110   dark:bg-zinc-500 dark:hover:bg-gray-600 hover:bg-gray-600 active:scale-105 transition bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"
           target="blank"
           href="https://twitter.com/Archit_gargg"
         >

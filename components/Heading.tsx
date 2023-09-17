@@ -6,7 +6,7 @@ interface headinprops{
 }
 const Heading:React.FC<headinprops> = ({title}) => {
   return (
-    <div className=' text-3xl font-medium  text-center capitalize mb-3'>
+    <div className=' text-3xl font-medium  text-center capitalize mb-2'>
 
 {title}
       

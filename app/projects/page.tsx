@@ -9,12 +9,12 @@ import Project from '@/components/Project';
 
 const page = () => {
   return (
-  <div className=' h-[60rem]'>
+  <div className=' sm:h-[60rem]  h-[20rem]'>
 
 
     <Heading title='Projects' />
 
-    <div className=' flex items-center justify-center h-[75rem]  '>
+    <div className=' flex items-center justify-center sm:h-[70rem]   mt-5  '>
 
     <section>
     
