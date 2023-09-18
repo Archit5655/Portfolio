@@ -1,12 +1,13 @@
-import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
-
 import { Fredoka } from "next/font/google";
 import ToasterProvider from "@/providers/toasterprovider";
+import ThemeContextProvider from "@/context/theme-context";
+
 
 import Darkmode from "@/components/Darkmode";
-import ThemeContextProvider from "@/context/theme-context";
+import Headerr from "@/components/Headerr";
+// import Headerr from "@/components/Headerr";
 
 const inter = Fredoka({ subsets: ["latin"] });
 
@@ -30,7 +31,7 @@ export default function RootLayout({
 
         <ToasterProvider />
         <ThemeContextProvider>
-          <Header />
+          <Headerr />
 
           {children}
           <Darkmode />

@@ -6,7 +6,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
-const Header = () => {
+const Headerr = () => {
   const pathname = usePathname();
   const [Active, setActive] = useState("Home");
   useEffect(() => {
@@ -70,4 +70,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Headerr;
