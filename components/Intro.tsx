@@ -57,7 +57,7 @@ const Intro = () => {
         }}
       >
         <Link
-          className=" bg-gray-900 dark:bg-gray-50 dark:text-gray-950 group text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition  cursor-pointer "
+          className=" bg-gray-900 dark:bg-gray-50  dark:text-gray-950 group text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition  cursor-pointer "
           href="/contact"
         >
           Contact me <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
