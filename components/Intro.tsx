@@ -83,7 +83,7 @@ const Intro = () => {
         <a
           className="outline-none focus:scale-110 hover:scale-110   dark:bg-zinc-500 dark:hover:bg-gray-600 hover:bg-gray-600 active:scale-105 transition bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full"
           target="blank"
-          href="https://twitter.com/Archit_gargg"
+          href=""
         >
           <AiOutlineTwitter />
         </a>
